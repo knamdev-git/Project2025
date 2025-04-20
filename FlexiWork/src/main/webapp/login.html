@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Sphere</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login page</title>
+<style>
+	/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #c8e6c9);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  overflow: hidden;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  width: 80%;
+  max-width: 1100px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Login Box */
+.login-box {
+  padding: 40px;
+  width: 50%;
+}
+
+.header h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.header p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-group input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 5px rgba(46, 125, 50, 0.5);
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #3A3A38;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+  color : buttonshadow;
+  background-color: gray;
+}
+
+.links {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.links a {
+  display: block;
+  font-size: 14px;
+  color: #1e88e5;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.links a:hover {
+  color: #1565c0;
+}
+
+/* Animation Box */
+.animation-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, black, aqua);
+  padding: 20px;
+  position: relative;
+}
+
+.plant-animation {
+  text-align: center;
+  animation: slideUp 1.2s ease-in-out;
+}
+
+.plant-animation img {
+  width: 200px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.plant-animation p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+	
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="login-box">
+      <div class="header">
+        <h2 style="color: #3A3A38">FlexiWork</h2>
+      </div>
+      
+      <form action="loginPageJump" method="post">
+       
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" name="uname" required="email">
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" name="upassword" required="password">
+        </div>
+        <button type="submit" class="login-btn">Log In</button>
+        <div class="links">
+          <a href="register.html">Don't have an account? Sign Up</a>
+        </div>
+      
+      </form>
+    
+    </div>
+    <div class="animation-container">
+      <div class="plant-animation">
+        <img src="common image.jpg" alt="Plant">
+        <p>Hire Smart. Hire Fast. Find Skills Near You</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
